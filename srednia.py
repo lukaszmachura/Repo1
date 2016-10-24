@@ -3,6 +3,8 @@ from myerror import *
 
 def srednia(lista):
     """ Obliczanie sredniej kwadratowej """
+
+    #Sprawdzenie czy input jest lista
     if type(lista)!=list:
         raise IBeBack;
 
