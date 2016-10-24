@@ -2,7 +2,7 @@ from math import sqrt
 from myerror import *
 
 def srednia(lista):
-    """ """
+    """ Obliczanie sredniej kwadratowej """
     if type(lista)!=list:
         raise IBeBack;
 
