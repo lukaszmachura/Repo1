@@ -1,2 +1,5 @@
 class IBeBack(Exception):
-    pass
+    pass:
+
+class ErrorX(Exception):
+    pass:
