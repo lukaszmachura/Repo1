@@ -12,3 +12,11 @@ def srednia(lista):
     for i in lista:
         suma += i**2
     return sqrt((suma/len(lista)))
+
+
+def innaSrednia(lista):
+    """ Srednia elementow listy """
+    suma = 0.0
+    for i in lista:
+    suma += i
+    return (suma/len(lista))
