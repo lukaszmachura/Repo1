@@ -1,11 +1,12 @@
 from math import sqrt
 from myerror import *
+form tools import sprawdzListe
 
 def srednia(lista):
     """ Obliczanie sredniej kwadratowej """
 
     #Sprawdzenie czy input jest lista
-    if type(lista)!=list:
+    if sprawdzListe(lista) = False:
         raise IBeBack;
 
     suma = 0.0
