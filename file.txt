@@ -1,0 +1,3 @@
+To jest przykladowy plik tekstowy
+Zadaniem tego pliku jest test programu wczytujacego plik tekstowy
+Program ten nastepnie ma obliczyc ilosc listy
