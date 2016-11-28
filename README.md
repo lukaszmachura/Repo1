@@ -1,2 +1,1 @@
-JEST TO REPO REPO1 NA LEKCJI NUMER 1
-JEST TO REPO REPO1 NA LEKCJI NUMER 2
+Pakiet do zabaw statystycznych z plikami tekstowymi.

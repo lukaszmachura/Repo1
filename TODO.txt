@@ -1,3 +1,3 @@
-HELLO HELLO
-IT'S GOOD TO BE BACK
-GOOD TO BE BACK
+TODO:
+1. brak zliczania znakow przestankowych
+2. wizualizacja
