@@ -1,24 +1,31 @@
-import sys
+File = open('file.txt').read()
 
 def scanFile(text):
+    wordArray = [ [],[] ]
+    wordText = '';
+    charCounter = 0;
     
-    histogram = {}
-    split_text = text.split(" ")
-    
-    for wyraz in split_text:
-        if len(wyraz) in histogram:
-            histogram[len(wyraz)] += 1
-        else:
-            histogram[len(wyraz)] = 1
-    
-    return histogram
-
+    for i in text:
         
-if len(sys.argv) == 1:
-    file_name = 'file.txt'
-else:
-    file_name = sys.argv[1]
+        if ( i == ' ') or ( i == '\n' ):
+            if charCounter in wordArray[0]:
+                idx = wordArray[0].index( charCounter );
+                wordArray[1][idx] += 1;
+            else:
+                wordArray[0].append( charCounter );
+                wordArray[1].append( 1 );
+            
+            #print wordText, charCounter
+            wordText = '';
+            charCounter = 0;
+            continue;
+        
+        wordText += i;
+        charCounter += 1;
 
-with open(file_name) as f:
-    File = f.read()
-    print scanFile(File);
+    return wordArray;
+
+table = scanFile( File );
+
+for i in range( len(table[0])-1 ):
+    print 'Slowo o ilosci', table[0][i], 'liter, wystepuje', table[1][i], 'razy.'
