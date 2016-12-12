@@ -13,12 +13,8 @@ def scanFile(text):
     
     return histogram
 
-        
-if len(sys.argv) == 1:
-    file_name = 'file.txt'
-else:
-    file_name = sys.argv[1]
 
-with open(file_name) as f:
-    File = f.read()
-    print scanFile(File);
+def openFile(fileName):
+    with open(fileName) as f:
+        File = f.read()
+        print scanFile(File);

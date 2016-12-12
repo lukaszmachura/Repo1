@@ -1,11 +1,10 @@
 from histogram import scanFile
 from show_histogram import show_histogram
 
-plik = 'file.txt'
+plik = 'To jest przykladowy tekst a to nie jest przykladowy tekst'
 h = scanFile(plik)
-print "test"
+print '##################################################'
 print h
+print '##################################################'
 print show_histogram(h)
-
-
-print show_histogram(dict(zip(range(10), range(20, 30))))
+print '##################################################'
