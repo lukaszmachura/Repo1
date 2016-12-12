@@ -1,4 +1,5 @@
 from histogram import scanFile
+from histogram import openFile
 from show_histogram import show_histogram
 from znaki import oFile
 
