@@ -17,4 +17,4 @@ def scanFile(text):
 def openFile(fileName):
     with open(fileName) as f:
         File = f.read()
-        print scanFile(File);
+        return scanFile(File);
