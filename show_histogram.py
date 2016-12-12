@@ -1,3 +1,5 @@
+from math import ceil
+
 def show_histogram(inputHistogram, znak="="):
     """drukowanie histogramu w konsoli"""
     wynik = ""
@@ -5,7 +7,10 @@ def show_histogram(inputHistogram, znak="="):
 
     for index in histogram:
         ilosc = inputHistogram[ index ]
-        bar = znak * ilosc
+        if (ilosc < 80):
+            bar = znak * int( ceil( float(ilosc)%80 ) )
+        else:
+            bar = znak * int( ceil( float(ilosc)/80 ) )
 
         tmp = str(index) + bar + '\n'
         
