@@ -1,3 +1,0 @@
-TODO:
-1. brak zliczania znakow przestankowych
-2. wizualizacja

@@ -1,8 +1,9 @@
 from histogram import scanFile
+from histogram import openFile
 from show_histogram import show_histogram
 
-plik = 'To jest przykladowy tekst a to nie jest przykladowy tekst'
-h = scanFile(plik)
+plik = 'file.txt'
+h = openFile(plik)
 print '##################################################'
 print h
 print '##################################################'
