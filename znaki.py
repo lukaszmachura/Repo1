@@ -15,7 +15,7 @@ def znaki(text):
             table.append(i)
     return "".join(table)
 
-def nope(fileName):
+def oFile(fileName):
     with open('file.txt') as f:
         File = f.read()
         return znaki(File);

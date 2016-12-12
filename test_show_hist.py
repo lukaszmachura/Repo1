@@ -1,9 +1,9 @@
 from histogram import scanFile
 from show_histogram import show_histogram
-from znaki import nope
+from znaki import oFile
 
 #plik = 'To jest przykladowy tekst a to nie jest przykladowy tekst'
-plik=nope('file.txt')
+plik=oFile('file.txt')
 h = scanFile(plik)
 print '##################################################'
 print h
